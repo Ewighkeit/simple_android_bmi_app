@@ -106,6 +106,7 @@ public class caculatorBmi {
             bmiValu.setText(bmiVal.setScale(2,BigDecimal.ROUND_HALF_UP).toString());
             if (bmiVal.doubleValue()>=27){
                 bmiJudge.setText("肥胖");
+                bmiJudge.setTextColor(-0x10000);
                 suggestBmi.setText("18.5至24");
                 BigDecimal standardwei1 = BigDecimal.valueOf(18.5*heii*heii);
                 BigDecimal standardwei2 = BigDecimal.valueOf(24*heii*heii);
@@ -113,6 +114,7 @@ public class caculatorBmi {
             }else {
                 if (bmiVal.doubleValue()>=24){
                     bmiJudge.setText("過重");
+                    bmiJudge.setTextColor(-0x10000);
                     suggestBmi.setText("18.5至24");
                     BigDecimal standardwei1 = BigDecimal.valueOf(18.5*heii*heii);
                     BigDecimal standardwei2 = BigDecimal.valueOf(24*heii*heii);
@@ -120,10 +122,12 @@ public class caculatorBmi {
                 }else {
                     if (bmiVal.doubleValue()>=18.5){
                         bmiJudge.setText("健康體重");
+                        bmiJudge.setTextColor(-0xbbbbbc);
                         suggestBmi.setText("-");
                         suggestWei.setText("-");
                     }else {
                         bmiJudge.setText("過輕");
+                        bmiJudge.setTextColor(-0x10000);
                         BigDecimal standardwei1 = BigDecimal.valueOf(18.5*heii*heii);
                         BigDecimal standardwei2 = BigDecimal.valueOf(24*heii*heii);
                         suggestWei.setText(standardwei1.setScale(1,BigDecimal.ROUND_HALF_UP).toString()+"公斤至"+standardwei2.setScale(1,BigDecimal.ROUND_HALF_UP).toString()+"公斤");

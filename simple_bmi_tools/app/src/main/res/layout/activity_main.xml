@@ -38,7 +38,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="30dp"
                 android:layout_margin="20dp"
                 android:orientation="horizontal">
 
@@ -51,10 +51,10 @@
 
                 <Spinner
                     android:id="@+id/spinner"
-                    android:entries="@array/spinnerValue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:entries="@array/spinnerValue" />
             </LinearLayout>
 
             <LinearLayout
@@ -148,7 +148,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:orientation="horizontal">
 
                     <TextView
@@ -183,7 +183,7 @@
                 <TextView
                     android:id="@+id/bmi_judg"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -191,7 +191,7 @@
                 <TextView
                     android:id="@+id/judge_waistline"
                     android:layout_width="match_parent"
-                    android:layout_height="40dp"
+                    android:layout_height="30dp"
                     android:textAlignment="center"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -212,7 +212,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="30dp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -237,7 +237,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="40dp"
+                        android:layout_height="30dp"
                         android:orientation="horizontal">
 
                         <TextView

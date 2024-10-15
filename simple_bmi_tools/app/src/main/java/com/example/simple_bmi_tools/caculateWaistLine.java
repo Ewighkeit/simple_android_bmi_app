@@ -49,9 +49,11 @@ public class caculateWaistLine {
                                 try {
                                     if (Integer.parseInt(editable.toString())>90){
                                         wasres.setText("腰圍超標");
+                                        wasres.setTextColor(-0x10000);
                                         suggwasi.setText("小於90公分");
                                     }else {
                                         wasres.setText("腰圍正常");
+                                        wasres.setTextColor(-0xbbbbbc);
                                         suggwasi.setText("-");
                                     }
                                 } catch (NumberFormatException e){
@@ -78,9 +80,11 @@ public class caculateWaistLine {
                                 try {
                                     if (Integer.parseInt(editable.toString())>80){
                                         wasres.setText("腰圍超標");
+                                        wasres.setTextColor(-0x10000);
                                         suggwasi.setText("小於80公分");
                                     }else {
                                         wasres.setText("腰圍正常");
+                                        wasres.setTextColor(-0xbbbbbc);
                                         suggwasi.setText("-");
                                     }
                                 } catch (NumberFormatException e){
